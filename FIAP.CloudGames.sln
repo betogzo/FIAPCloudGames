@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIAP.CloudGames.Domain", "FIAP.CloudGames.Domain\FIAP.CloudGames.Domain.csproj", "{A71A4163-B7B7-475B-8F3A-91EF6CB92BD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIAP.CloudGames.Application", "FIAP.CloudGames.Application\FIAP.CloudGames.Application.csproj", "{F3139B4F-D1AA-4125-9C83-3A8940212C26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIAP.CloudGames.Infrastructure", "FIAP.CloudGames.Infrastructure\FIAP.CloudGames.Infrastructure.csproj", "{1B6E4082-96C8-4166-98FE-78938247B42B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIAP.CloudGames.API", "FIAP.CloudGames.API\FIAP.CloudGames.API.csproj", "{06BFE4DD-471E-4DD2-B3FC-71F792FBE2FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIAP.CloudGames.Tests", "FIAP.CloudGames.Tests\FIAP.CloudGames.Tests.csproj", "{93CB9E3D-1655-4B12-89B9-6DA373C9BE4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A71A4163-B7B7-475B-8F3A-91EF6CB92BD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A71A4163-B7B7-475B-8F3A-91EF6CB92BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A71A4163-B7B7-475B-8F3A-91EF6CB92BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A71A4163-B7B7-475B-8F3A-91EF6CB92BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3139B4F-D1AA-4125-9C83-3A8940212C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3139B4F-D1AA-4125-9C83-3A8940212C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3139B4F-D1AA-4125-9C83-3A8940212C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3139B4F-D1AA-4125-9C83-3A8940212C26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B6E4082-96C8-4166-98FE-78938247B42B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B6E4082-96C8-4166-98FE-78938247B42B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B6E4082-96C8-4166-98FE-78938247B42B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B6E4082-96C8-4166-98FE-78938247B42B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06BFE4DD-471E-4DD2-B3FC-71F792FBE2FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06BFE4DD-471E-4DD2-B3FC-71F792FBE2FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06BFE4DD-471E-4DD2-B3FC-71F792FBE2FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06BFE4DD-471E-4DD2-B3FC-71F792FBE2FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93CB9E3D-1655-4B12-89B9-6DA373C9BE4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93CB9E3D-1655-4B12-89B9-6DA373C9BE4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93CB9E3D-1655-4B12-89B9-6DA373C9BE4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93CB9E3D-1655-4B12-89B9-6DA373C9BE4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

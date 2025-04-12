@@ -1,0 +1,254 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.API/FIAP.CloudGames.API.csproj": {}
+  },
+  "projects": {
+    "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.API/FIAP.CloudGames.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.API/FIAP.CloudGames.API.csproj",
+        "projectName": "FIAP.CloudGames.API",
+        "projectPath": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.API/FIAP.CloudGames.API.csproj",
+        "packagesPath": "/home/user/.nuget/packages/",
+        "outputPath": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/user/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Application/FIAP.CloudGames.Application.csproj": {
+                "projectPath": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Application/FIAP.CloudGames.Application.csproj"
+              },
+              "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Domain/FIAP.CloudGames.Domain.csproj": {
+                "projectPath": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Domain/FIAP.CloudGames.Domain.csproj"
+              },
+              "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Infrastructure/FIAP.CloudGames.Infrastructure.csproj": {
+                "projectPath": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Infrastructure/FIAP.CloudGames.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.115/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Application/FIAP.CloudGames.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Application/FIAP.CloudGames.Application.csproj",
+        "projectName": "FIAP.CloudGames.Application",
+        "projectPath": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Application/FIAP.CloudGames.Application.csproj",
+        "packagesPath": "/home/user/.nuget/packages/",
+        "outputPath": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/user/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Domain/FIAP.CloudGames.Domain.csproj": {
+                "projectPath": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Domain/FIAP.CloudGames.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.115/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Domain/FIAP.CloudGames.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Domain/FIAP.CloudGames.Domain.csproj",
+        "projectName": "FIAP.CloudGames.Domain",
+        "projectPath": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Domain/FIAP.CloudGames.Domain.csproj",
+        "packagesPath": "/home/user/.nuget/packages/",
+        "outputPath": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/user/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.115/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Infrastructure/FIAP.CloudGames.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Infrastructure/FIAP.CloudGames.Infrastructure.csproj",
+        "projectName": "FIAP.CloudGames.Infrastructure",
+        "projectPath": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Infrastructure/FIAP.CloudGames.Infrastructure.csproj",
+        "packagesPath": "/home/user/.nuget/packages/",
+        "outputPath": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/user/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Application/FIAP.CloudGames.Application.csproj": {
+                "projectPath": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Application/FIAP.CloudGames.Application.csproj"
+              },
+              "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Domain/FIAP.CloudGames.Domain.csproj": {
+                "projectPath": "/home/user/Desktop/FIAPCloudGames/FIAP.CloudGames.Domain/FIAP.CloudGames.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.115/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
