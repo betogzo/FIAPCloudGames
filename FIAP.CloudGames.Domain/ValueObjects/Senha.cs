@@ -11,6 +11,8 @@ public class Senha : BaseValueObject
 
         ValorHash = hash;
     }
+    
+    public override string ToString() => ValorHash;
 
     protected override IEnumerable<object?> GetEqualityComponents()
     {
