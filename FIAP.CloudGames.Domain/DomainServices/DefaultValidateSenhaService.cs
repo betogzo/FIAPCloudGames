@@ -3,7 +3,7 @@ using FIAP.CloudGames.Domain.Interfaces.Policies;
 
 namespace FIAP.CloudGames.Domain.DomainServices;
 
-public partial class DefaultSenhaPolicy : ISenhaPolicy
+public partial class DefaultValidateSenhaService : IValidateSenhaService
 {
     private readonly Regex _regexValidation = MyRegex();
     
