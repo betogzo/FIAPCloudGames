@@ -1,6 +1,6 @@
 using FIAP.CloudGames.Domain.DomainServices;
 
-namespace FIAP.CloudGames.Tests.Domain.Policies;
+namespace FIAP.CloudGames.Tests.Domain.DomainServices;
 
 public class ValidateSenhaServiceTests
 {
