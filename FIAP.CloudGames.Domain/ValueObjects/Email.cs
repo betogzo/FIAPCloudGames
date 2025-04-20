@@ -1,4 +1,5 @@
 ﻿using System.Text.RegularExpressions;
+using FIAP.CloudGames.Domain.Shared;
 
 namespace FIAP.CloudGames.Domain.ValueObjects;
 
@@ -6,17 +7,24 @@ public class Email : BaseValueObject
 {
     public string Endereco { get; }
 
-    public Email(string endereco)
+    private Email(string endereco)
     {
-        if (string.IsNullOrWhiteSpace(endereco))
-            throw new ArgumentException("E-mail nao pode ser vazio.");
-
-        if (!Regex.IsMatch(endereco, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
-            throw new ArgumentException("E-mail invalido.");
-            
         Endereco = endereco;
     }
-    
+
+    public static Result<Email> Create(string endereco)
+    {
+        var listaErros = new List<string>();
+
+        if (string.IsNullOrWhiteSpace(endereco))
+            listaErros.Add("Endereco de e-mail não pode ser nulo ou vazio.");
+        else if (!Regex.IsMatch(endereco, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            listaErros.Add(
+                "Endereco de e-mail inválido.");
+
+        return listaErros.Any() ? Result<Email>.Fail(listaErros) : Result<Email>.Ok(new Email(endereco));
+    }
+
     public override string ToString() => Endereco;
 
     protected override IEnumerable<object?> GetEqualityComponents()
