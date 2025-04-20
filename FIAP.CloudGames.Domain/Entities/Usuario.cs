@@ -10,7 +10,6 @@ public class Usuario
     public Email Email { get; private set; }
     public Senha Senha { get; private set; }
     public ETipo Tipo { get; private set; }
-    public bool Ativo { get; private set; }
     public DateTime CreatedAt { get; private set; }
 
     public Usuario(string nome, Email email, Senha senha, ETipo tipo = ETipo.Usuario)
@@ -23,7 +22,6 @@ public class Usuario
         Email = email ?? throw new ArgumentNullException(nameof(email));
         Senha = senha ?? throw new ArgumentNullException(nameof(senha));; 
         Tipo = tipo;
-        Ativo = true;
         CreatedAt = DateTime.UtcNow;
     }
     
@@ -63,9 +61,6 @@ public class Usuario
 
         Tipo = ETipo.Administrador;
     }
-
-    public void Inativar() => Ativo = false;
-    public void Ativar() => Ativo = true;
     
     public override bool Equals(object? obj)
     {
