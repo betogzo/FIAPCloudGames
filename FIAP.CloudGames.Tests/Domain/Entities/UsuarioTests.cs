@@ -202,6 +202,21 @@ public class UsuarioTests
     }
 
     [Fact]
+    public void UpdatedAt_AposAlgumaAtualizacao_DeveMudar()
+    {
+        var usuario = Usuario.Create(_nomeValido, _emailValido, _senhaValida);
+        Assert.True(usuario.IsSuccess);
+        
+        var updatedAtInicial = usuario.Data.UpdatedAt;
+        
+        var resultadoAtualizarNome = usuario.Data.AtualizarNome("Alberto");
+        Assert.True(resultadoAtualizarNome.IsSuccess);
+        
+        Assert.True(updatedAtInicial < usuario.Data.UpdatedAt );
+    }
+
+
+    [Fact]
     public void PromoverParaAdmin_UsuarioComum_DeveAlterarTipoParaAdministrador()
     {
         var usuario = Usuario.Create(_nomeValido, _emailValido, _senhaValida, ETipo.Usuario);
@@ -212,6 +227,7 @@ public class UsuarioTests
         Assert.True(resultadoPromoverParaAdmin.IsSuccess);
         Assert.True(usuario.Data.Tipo == ETipo.Administrador);
     }
+    
 
     [Fact]
     public void PromoverParaAdmin_UsuarioJaAdministrador_DeveResultarFalha()
@@ -224,7 +240,7 @@ public class UsuarioTests
         Assert.False(resultadoPromoverParaAdmin.IsSuccess);
         Assert.Contains("Administrador", resultadoPromoverParaAdmin.Errors[0], StringComparison.OrdinalIgnoreCase);
     }
-
+    
     [Fact]
     public void MetodoEquals_UsuariosComMesmoId_DeveSerTrue()
     {
