@@ -12,6 +12,7 @@ public class Usuario
     public Senha Senha { get; private set; }
     public ETipo Tipo { get; private set; }
     public DateTime CreatedAt { get; private set; }
+    public DateTime UpdatedAt { get; private set; }
 
     private Usuario(string nome, Email email, Senha senha, ETipo tipo = ETipo.Usuario)
     {
@@ -21,6 +22,7 @@ public class Usuario
         Senha = senha;
         Tipo = tipo;
         CreatedAt = DateTime.UtcNow;
+        UpdatedAt = CreatedAt;
     }
 
     public static Result<Usuario> Create(string nome, string enderecoEmail, string senhaHash,
@@ -48,6 +50,7 @@ public class Usuario
             return Result.Fail(new List<string> { "Nome nao pode ser nulo ou vazio." });
 
         Nome = novoNome;
+        UpdatedAt = DateTime.UtcNow;
         return Result.Ok();
     }
 
@@ -59,6 +62,7 @@ public class Usuario
             return Result.Fail(resultadoEmail.Errors);
 
         Email = resultadoEmail.Data;
+        UpdatedAt = DateTime.UtcNow;
         return Result.Ok();
     }
 
@@ -76,7 +80,7 @@ public class Usuario
             return Result.Fail(["A nova senha não pode ser igual à anterior."]);
         
         Senha = resultadoSenha.Data;
-
+        UpdatedAt = DateTime.UtcNow;
         return Result.Ok();
     }
 
@@ -86,7 +90,7 @@ public class Usuario
             return Result.Fail(new List<string> { "Usuário já é administrador." });
 
         Tipo = ETipo.Administrador;
-
+        UpdatedAt = DateTime.UtcNow;
         return Result.Ok();
     }
 
