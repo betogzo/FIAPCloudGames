@@ -31,4 +31,12 @@ public class Email : BaseValueObject
     {
         yield return Endereco;
     }
+    
+    public override bool Equals(object? obj)
+    {
+        if (obj is not Email other)
+            return false;
+
+        return Endereco == other.Endereco;
+    }
 }
