@@ -1,4 +1,4 @@
-name: CD - Docker Publish
+name: CD - docker publish
 
 on:
   push:
