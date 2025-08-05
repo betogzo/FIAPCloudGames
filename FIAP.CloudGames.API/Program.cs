@@ -75,6 +75,12 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString));
 
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(80);
+});
+
+
 var app = builder.Build();
 
 app.UseSwagger();
