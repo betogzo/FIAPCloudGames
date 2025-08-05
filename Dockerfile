@@ -21,6 +21,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build /app/FIAP.CloudGames.API/out .
 
-EXPOSE 80
+EXPOSE 80 2222
 
 ENTRYPOINT ["dotnet", "FIAP.CloudGames.API.dll"]
