@@ -9,9 +9,6 @@ jobs:
   docker:
     runs-on: ubuntu-latest
 
-    env:
-      IMAGE: ${{ secrets.REGISTRY_USERNAME }}/${{ secrets.IMAGE_NAME }}:latest
-
     steps:
       - name: Checkout do código
         uses: actions/checkout@v3
@@ -22,13 +19,10 @@ jobs:
           username: ${{ secrets.REGISTRY_USERNAME }}
           password: ${{ secrets.REGISTRY_PASSWORD }}
 
-      - name: Debug IMAGE_NAME
-        run: echo "::debug::IMAGE_NAME=${{ secrets.IMAGE_NAME }}"
-
       - name: Build da imagem Docker
         run: |
-          docker build -t $IMAGE .
+          docker build -t ${{ secrets.IMAGE_NAME }}:latest .
 
-      - name: Push para Docker Hub
+      - name: Push da imagem para o Docker Hub
         run: |
-          docker push $IMAGE
+          docker push ${{ secrets.IMAGE_NAME }}:latest
