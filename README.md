@@ -1,7 +1,7 @@
 
 # FIAP.CloudGames 🎮
 
-Aplicação desenvolvida como parte inicial do desafio da pós-graduação em Arquitetura de Sistemas .NET da FIAP.
+Aplicação desenvolvida como parte inicial do desafio da pós-graduação em Arquitetura de Sistemas .NET da FIAP. Plataforma fictícia de jogos eletrônicos em que usuários podem se cadastrar e adquirir jogos, muitas vezes em promoção.
 
 ## 📚 Descrição
 
@@ -26,13 +26,11 @@ FIAP.CloudGames é uma API REST desenvolvida com .NET 8, focada em boas prática
 
 ---
 
-## 🔐 Funcionalidades
+## 🔐 Funcionalidades até o momento
 
 - CRUD de usuários com validações robustas
 - Autenticação JWT
 - Controle de acesso por perfis/roles
-- Exclusão de conta
-- Middleware global de tratamento de exceções
 
 ---
 
