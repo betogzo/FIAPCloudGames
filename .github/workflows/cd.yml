@@ -1,4 +1,4 @@
-name: CD - docker publish
+name: CD - Docker Publish
 
 on:
   push:
@@ -21,6 +21,9 @@ jobs:
         with:
           username: ${{ secrets.REGISTRY_USERNAME }}
           password: ${{ secrets.REGISTRY_PASSWORD }}
+
+      - name: Debug IMAGE_NAME
+        run: echo "::debug::IMAGE_NAME=${{ secrets.IMAGE_NAME }}"
 
       - name: Build da imagem Docker
         run: |
